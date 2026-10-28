@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe知识动画制作规范"
+  short_description: "跨选题维护知识科普视频的叙事、视觉、动效、口播同步与复盘迭代标准"
+  default_prompt: "使用 $vibe-knowledge-video，按当前系列规范准备下一期内容或整理审片反馈。"
