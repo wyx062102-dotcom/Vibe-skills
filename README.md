@@ -6,7 +6,7 @@
 
 A reusable AI skill that turns a short knowledge or news-explainer video into one consistent workflow — from picking a visual style and writing the script, through texture-based animation with bound sound effects, voice cleanup and bilingual subtitles, to per-platform covers and post copy.
 
-> 当前版本 / Current version: **v0.4.0** · 规范语言 / Skill language: 中文 (Chinese)
+> 当前版本 / Current version: **v0.5.0** · 规范语言 / Skill language: 中文 (Chinese)
 
 ---
 
@@ -24,6 +24,7 @@ vibe-knowledge-video/
     ├── audio-sync.md            # 用户原声为时间基础；三层时间线；剪辑映射
     ├── publishing.md            # 中英文字幕、五平台封面与发布文案
     ├── templates.md             # 单期策划、分镜、音效事件表、复盘模板
+    ├── local-production.md      # 本机（Windows）渲染、自动重叠/动效检查
     └── evolution.md             # 如何把审片反馈变成规范更新
 ```
 
@@ -36,6 +37,7 @@ vibe-knowledge-video/
 | `audio-sync.md` | Your own voice recording drives the timeline; edit-map rules |
 | `publishing.md` | Chinese/English subtitles; covers and copy for Douyin, Xiaohongshu, Bilibili, YouTube, X |
 | `templates.md` | Fill-in templates for planning, storyboard, SFX events, review |
+| `local-production.md` | Local Windows rendering, overlap and motion checks before every render |
 | `evolution.md` | Turning review feedback into versioned rule changes |
 
 ## 核心原则 / Key principles
@@ -48,6 +50,8 @@ vibe-knowledge-video/
 6. **默认中英双语字幕** — Chinese on top, English below; separate `zh.srt`, `en.srt`, and a bilingual project.
 7. **封面分平台构图** — Re-layout covers per platform; never stretch one image.
 8. **只承诺实际核验过的内容** — Report only checks actually performed; platform UI beats old guesses.
+9. **除字幕外一切变化都有动效** — Nothing on screen except subtitles may pop or teleport; subtitles simply cut.
+10. **分层场景要融合、信息要避让** — Layered scenes must read as one space; labels never collide with lines, in any frame.
 
 ## 安装 / Install
 
@@ -64,7 +68,7 @@ cp -r vibe-video/vibe-knowledge-video ~/.claude/skills/
 
 Then ask: *"Use vibe-knowledge-video to plan my next explainer about X."*
 
-## 已知限制 / Known limitations (v0.4.0)
+## 已知限制 / Known limitations (v0.5.0)
 
 - `publishing.md` 中的封面尺寸表是**设计起点，不是平台强制规格**。作者在实际发布界面中看到：抖音为 **3:4 竖封面 + 4:3 横封面**（表中仍写 9:16）；小红书封面比例尚待核对。发布前请以你自己账号的实际界面为准，后续版本会更新。
   The cover-size table in `publishing.md` is a *starting point, not a platform rule*. In the author's own upload screen, Douyin asked for a **3:4 portrait + 4:3 landscape** cover (the table still says 9:16); Xiaohongshu is not yet verified. Always check your own upload screen.
