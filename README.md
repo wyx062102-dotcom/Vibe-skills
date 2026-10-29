@@ -6,7 +6,7 @@
 
 A reusable AI skill that turns a short knowledge or news-explainer video into one consistent workflow — from picking a visual style and writing the script, through texture-based animation with bound sound effects, voice cleanup and bilingual subtitles, to per-platform covers and post copy.
 
-> 当前版本 / Current version: **v0.5.0** · 规范语言 / Skill language: 中文 (Chinese)
+> 当前版本 / Current version: **v0.6.0** · 规范语言 / Skill language: 中文 (Chinese)
 
 ---
 
@@ -16,6 +16,7 @@ A reusable AI skill that turns a short knowledge or news-explainer video into on
 vibe-knowledge-video/
 ├── SKILL.md                     # 入口：范围、工作方式、输出前检查
 ├── agents/openai.yaml           # 显示名称与默认提示（可选）
+├── assets/layout-safe-area-reference.png  # 竖屏版面参考图（抖音真机实测）
 └── references/
     ├── series-standard.md       # 系列制作规范：叙事、视觉、节奏、质量
     ├── planning-handoff.md      # 先定风格再写脚本；先展示再定稿；交接包
@@ -24,6 +25,7 @@ vibe-knowledge-video/
     ├── audio-sync.md            # 用户原声为时间基础；三层时间线；剪辑映射
     ├── publishing.md            # 中英文字幕、五平台封面与发布文案
     ├── templates.md             # 单期策划、分镜、音效事件表、复盘模板
+    ├── layout-safe-area.md      # 竖屏版面：核心居中、字幕位置、平台遮挡区
     ├── local-production.md      # 本机（Windows）渲染、自动重叠/动效检查
     └── evolution.md             # 如何把审片反馈变成规范更新
 ```
@@ -68,7 +70,7 @@ cp -r vibe-video/vibe-knowledge-video ~/.claude/skills/
 
 Then ask: *"Use vibe-knowledge-video to plan my next explainer about X."*
 
-## 已知限制 / Known limitations (v0.5.0)
+## 已知限制 / Known limitations (v0.6.0)
 
 - `publishing.md` 中的封面尺寸表是**设计起点，不是平台强制规格**。作者在实际发布界面中看到：抖音为 **3:4 竖封面 + 4:3 横封面**（表中仍写 9:16）；小红书封面比例尚待核对。发布前请以你自己账号的实际界面为准，后续版本会更新。
   The cover-size table in `publishing.md` is a *starting point, not a platform rule*. In the author's own upload screen, Douyin asked for a **3:4 portrait + 4:3 landscape** cover (the table still says 9:16); Xiaohongshu is not yet verified. Always check your own upload screen.
