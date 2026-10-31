@@ -1,5 +1,5 @@
 ---
-name: claude-gpt-handoff
+name: cross-ai-handoff
 description: 部署并使用 Claude 与 GPT（ChatGPT、Codex）之间的项目交接：两边读写同一个本地项目文件夹和交接记录，一边额度用完或想换工具时另一边直接接着做；用户说部署 Claude 和 GPT 交接、换到 GPT 继续、把 GPT 的进度接回来时使用。
 ---
 

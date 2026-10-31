@@ -45,7 +45,7 @@
 
 ```bash
 git clone https://github.com/wyx062102-dotcom/vibe-skills.git
-cp -r vibe-skills/claude-gpt-handoff ~/.claude/skills/
+cp -r vibe-skills/cross-ai-handoff ~/.claude/skills/
 ```
 
 在 Claude 应用里，也可以把文件夹打包成 zip，在 设置 → Skills 里上传。然后对 Claude 说：“部署 Claude 和 GPT 交接”。

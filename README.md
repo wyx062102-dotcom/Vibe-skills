@@ -12,7 +12,7 @@
 |---|---|---|
 | [vibe-knowledge-video](vibe-knowledge-video/) | 知识科普 / 资讯速报短视频全工作流：选风格、写脚本、贴图动画与音效、原声处理、双语字幕、多平台封面与文案。<br>End-to-end workflow for short knowledge-explainer animations. | v0.6.0 |
 | [project-handoff-setup](project-handoff-setup/) | 跨账号项目交接系统：一键部署本地项目文件夹 + Basic Memory + 交接记录，换账号也能接着做。<br>One-step setup for continuing projects across Claude accounts. | v0.1.0 |
-| [claude-gpt-handoff](claude-gpt-handoff/) | Claude ⇄ GPT 项目交接：Claude 与 ChatGPT、Codex 共用同一份交接记录，换工具也能接着做。<br>Hand projects between Claude and GPT through one shared handoff note. | v0.1.0 |
+| [cross-ai-handoff](cross-ai-handoff/) | Claude ⇄ GPT 项目交接：Claude 与 ChatGPT、Codex 共用同一份交接记录，换工具也能接着做。<br>Hand projects between Claude and GPT through one shared handoff note. | v0.1.0 |
 
 点进各自文件夹查看详细说明和安装方法。
 
